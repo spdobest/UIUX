@@ -112,14 +112,14 @@ Pseudo-class selectors (select elements based on a certain state)
 Pseudo-elements selectors (select and style a part of an element)  
 Attribute selectors (select elements based on an attribute or attribute value)**  
     
-## ELEMENT SELECTOR  
+## ELEMENT SELECTOR ( Without using any prefix like below )  
 ```
 p {
   text-align: center;
   color: red;
 }   
 ```  
-## ID SELECTOR  
+## ID SELECTOR ( Using # front of the id name )  
 The CSS rule below will be applied to the HTML element with id="para1":   
 ```   
 #para1 {
@@ -127,7 +127,7 @@ The CSS rule below will be applied to the HTML element with id="para1":
   color: red;
 }
 ```  
-## CLASS SELECTOR  
+## CLASS SELECTOR ( by using . before the class name )   
 In this example all HTML elements with class="center" will be red and center-aligned:   
   
 ```
@@ -179,3 +179,110 @@ h1, h2, p {
   color: red;
 }
 ```  
+## List of basic properties used in CSS  
+**1.Background**  
+      a. background-color - specifies the background color of an element   
+      b. background-image - specifies an image to use as the background of an element   
+      c. background-repeat - property repeats an image both horizontally and vertically  
+      d. background-attachment - property specifies whether the background image should scroll or be fixed  
+      e. background-position - To shorten the code, it is also possible to specify all the background properties in one single          property  
+      **Example**  
+```
+      background-color: lightblue;
+      background-image: url("paper.gif");
+      background-image: url("img_tree.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-attachment: fixed;
+```   
+**2.Boarder Style**   
+      border-width: 5px;
+      border-color: red;
+      Boarder slide  
+      border-radius: 5px;  
+```
+      border-top-style: dotted;
+      border-right-style: solid;
+      border-bottom-style: dotted;
+      border-left-style: solid;  
+```
+   dotted - Defines a dotted border  
+   dashed - Defines a dashed border  
+   solid - Defines a solid border  
+   double - Defines a double border  
+   groove - Defines a 3D grooved border. The effect depends on the border-color value  
+   ridge - Defines a 3D ridged border. The effect depends on the border-color value  
+   inset - Defines a 3D inset border. The effect depends on the border-color value  
+   outset - Defines a 3D outset border. The effect depends on the border-color value  
+   none - Defines no border  
+   hidden - Defines a hidden border  
+        
+```
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.solid {border-style: solid;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mix {border-style: dotted dashed solid double;}
+        in the above code, p is for <p class = "dotted"> <p>
+```  
+**3.Padding**  
+```
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+```  
+  
+```
+p {
+  margin: 25px 50px 75px 100px;
+}
+```  
+  
+***Note: we define padding same as marggin above***  
+  
+**4.Width/Height**  
+a.  height     - Sets the height of an element  
+b.  max-height -	Sets the maximum height of an element  
+c.  max-width  - Sets the maximum width of an element  
+d.  min-height - Sets the minimum height of an element  
+e.  min-width  - Sets the minimum width of an element  
+f.  width      - Sets the width of an element  
+  
+**5.font**  
+```
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+```  
+  
+**6. List Style**  
+```
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+```  
+  
+  
+     
+     
