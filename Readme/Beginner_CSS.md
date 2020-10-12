@@ -161,6 +161,37 @@ p {
     margin-left: 20px;
 }
 ```
+## Styling Links with CSS
+- A link has four different states — link, visited, active and hover. These four states of a link can be styled differently through using the following anchor pseudo-class selectors.
+  - **a:link** — define styles for normal or unvisited links.
+  - **a:visited** — define styles for links that the user has already visited.
+  - **a:hover** — define styles for a link when the user place the mouse pointer over it.
+  - **a:active**— define styles for links when they are being clicked.
+```
+a:link {    /* unvisited link */
+    color: #ff0000;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+a:visited {    /* visited link */
+    color: #ff00ff;
+}
+a:hover {    /* mouse over link */
+    color: #00ff00;
+    border-bottom: none;
+}
+a:active {    /* active link */
+    color: #00ffff;
+}
+```
+- For more details visit **https://www.tutorialrepublic.com/css-tutorial/css-links.php**
+- 
+## CSS Lists 
+- There are three different types of list in HTML:
+- **Unordered lists** — A list of items, where every list items are marked with bullets.
+- **Ordered lists** — A list of items, where each list items are marked with numbers.
+- **Definition list** — A list of items, with a description of each item.  
+
 ## The Box Model
 - Margins, padding and borders (see next page) are all part of what’s known as the Box Model. 
 - The Box Model works like this: in the middle you have the content area (let’s say an image), surrounding that you have the padding, surrounding that you have the border and surrounding that you have the margin.
@@ -176,9 +207,8 @@ h2 {
     border-color: red;
 }
 ```
-- 
-
-## CSS Selectors  
+## CSS Selectors 
+- **For More detsils follow https://www.tutorialrepublic.com/css-tutorial/css-selectors.php**
 - CSS selectors are used to "find" (or select) the HTML elements you want to style.
 - We can divide CSS selectors into five categories:  
 - 1. **Simple selectors** (select elements based on name, id, class)  
