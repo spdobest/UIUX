@@ -11,35 +11,37 @@ HTML is only intend to show the content in the web page. HTML should not hold an
     
 To solve the above problem we define all the styles in the .css file and add the style to the HTML page which helps to reuse the styles and also  easy to maintain the HTML code.  
   
-## How can we define the styles in HTML ?  
+## Applying CSS to HTML page ?  
 There are different ways to define styles in HTML.  
-1. **Internal CSS** We can define styles inside the HTML file   
-2. **External CSS** we can define styles in another .css file and include that .css file in the HTML file where we want to apply the list of styles defined in that HTML file.  
-3. **Inline CSS**  
-  
-## Internal CSS
--  Declare the styles inside the html page inside style tag like below
+- 1. **Inline CSS**  
+- 2. **Internal CSS** We can define styles inside the HTML file   
+- 3. **External CSS** we can define styles in another .css file and include that .css file in the HTML file where we want to apply the list of styles defined in that HTML file.  
+
+## 1. Inline css
+- Inline styles are plonked straight into the HTML tags using the style attribute.
+- They look something like this:
+- for more details look at the example below
+``` <p style="color: red">text</p> ``` 
+## Embedded, or internal CSS
+-  Embedded, or internal, styles are used for the whole page. Inside the head element, the style tags surround all of the styles for the page.
 ```  
 <!DOCTYPE html>
 <html>
 <head>
-
+<title>CSS Example</title>
 <style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
+    p {
+        color: red;
+    }
+    a {
+        color: blue;
+    }
 </style>
-
-</head>
-<body>
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-</body>
-</html>
+...
 ```   
-
+- This will make all of the paragraphs in the page red and all of the links blue.
 ## External CSS
-- In this weay define all the style inside anothe .css file and include the css file in the html file
+- In this weay define all the style inside another .css file and include the css file in the html file
 
 ```
 h1 {
@@ -81,31 +83,10 @@ td {
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
-</head>
-<body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
-</html>
+    <title>CSS Example</title>
+    <link rel="stylesheet" href="style.css">
+...
 ``` 
-## Inline css
-- In this methods, we define the styles in each html tag
--  for more details look at the example below
-```
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1 style="color:blue;text-align:center;">This is a heading</h1>
-<p style="color:red;">This is a paragraph.</p>
-
-</body>
-</html>
-```
-  
 ## CSS Selectors  
 - CSS selectors are used to "find" (or select) the HTML elements you want to style.
 - We can divide CSS selectors into five categories:  
