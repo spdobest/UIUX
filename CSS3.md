@@ -17,7 +17,8 @@ There are different ways to define styles in HTML.
 2. **External CSS** we can define styles in another .css file and include that .css file in the HTML file where we want to apply the list of styles defined in that HTML file.  
 3. **Inline CSS**  
   
-**Here is the example of above two methods**  
+## Internal CSS
+-  Declare the styles inside the html page inside style tag like below
 ```  
 <!DOCTYPE html>
 <html>
@@ -36,7 +37,10 @@ p    {color: red;}
 </body>
 </html>
 ```   
-**Another way to define styles inside separate .css file. Like below.**  
+
+## External CSS
+- In this weay define all the style inside anothe .css file and include the css file in the html file
+
 ```
 h1 {
   text-align: center;
@@ -71,9 +75,8 @@ td {
   text-align: center;
 }
 ```
-  
-**Remove the style block from the HTML file.  
-In the HTML file, add a link tag after the closing title tag that points to StyleSheet.css.**   
+- Remove the style block from the HTML file.  
+- In the HTML file, add a link tag after the closing title tag that points to StyleSheet.css.**   
 ```  
 <!DOCTYPE html>
 <html>
@@ -88,7 +91,9 @@ In the HTML file, add a link tag after the closing title tag that points to Styl
 </body>
 </html>
 ``` 
-**EXAMPLE OF INLINE CSS**  
+## Inline css
+- In this methods, we define the styles in each html tag
+-  for more details look at the example below
 ```
 <!DOCTYPE html>
 <html>
@@ -102,16 +107,14 @@ In the HTML file, add a link tag after the closing title tag that points to Styl
 ```
   
 ## CSS Selectors  
-CSS selectors are used to "find" (or select) the HTML elements you want to style.  
-  
-We can divide CSS selectors into five categories:  
+- CSS selectors are used to "find" (or select) the HTML elements you want to style.
+- We can divide CSS selectors into five categories:  
+- 1. **Simple selectors** (select elements based on name, id, class)  
+- 2. **Combinator selectors** (select elements based on a specific relationship between them)  
+- 3. **Pseudo-class selectors** (select elements based on a certain state)  
+- 4. **Pseudo-elements selectors** (select and style a part of an element)  
+- 5. **Attribute selectors** (select elements based on an attribute or attribute value)**  
 
-**Simple selectors (select elements based on name, id, class)  
-Combinator selectors (select elements based on a specific relationship between them)  
-Pseudo-class selectors (select elements based on a certain state)  
-Pseudo-elements selectors (select and style a part of an element)  
-Attribute selectors (select elements based on an attribute or attribute value)**  
-    
 ## ELEMENT SELECTOR ( Without using any prefix like below )  
 ```
 p {
@@ -120,7 +123,7 @@ p {
 }   
 ```  
 ## ID SELECTOR ( Using # front of the id name )  
-The CSS rule below will be applied to the HTML element with id="para1":   
+- The CSS rule below will be applied to the HTML element with id="para1":   
 ```   
 #para1 {
   text-align: center;
@@ -128,7 +131,7 @@ The CSS rule below will be applied to the HTML element with id="para1":
 }
 ```  
 ## CLASS SELECTOR ( by using . before the class name )   
-In this example all HTML elements with class="center" will be red and center-aligned:   
+- In this example all HTML elements with class="center" will be red and center-aligned:   
   
 ```
 .center {
@@ -155,7 +158,7 @@ The CSS rule below will affect every HTML element on the page:
 }  
 ```  
 
-**OTHER EXAMPLEs**   
+## OTHER EXAMPLES
 ```
 h1 {
   text-align: center;
